@@ -16,13 +16,15 @@ CONFDIR=/etc/ddns-go
 CONF=/etc/ddns-go/ddnsgo-config.yaml
 
 get_config() {
-        config_get_bool enabled $1 enabled 1
+    config_get_bool enabled $1 enabled 1
 	config_get_bool logger $1 logger 1
 	config_get port $1 port 9876
 }
+
 ddnsgo_prepare() {
 	pgrep -f /usr/bin/ddns-go | xargs kill -9 >/dev/null 2>&1 
 	logger -t ddns-go -p warn "ddns-go is stop."
+	echo "ddns-go is stop."
 }
 
 init_yaml(){

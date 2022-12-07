@@ -15,7 +15,11 @@ s.anonymous = true
 o = s:option(Flag,"enabled",translate("Enable"))
 o.default = 0
 
-o = s:option(Value, "port",translate("Set the DDNS-TO access port"))
+o = s:option(Value, "port",translate("Set the DDNS-GO access port"))
+o.datatype = "uinteger"
+o.default=9876
+
+o = s:option(Value, "viewport",translate("Set the LUCI DDNS-GO page access port"))
 o.datatype = "uinteger"
 o.default=9876
 
