@@ -1,4 +1,6 @@
-### 访问数：[![](https://visitor-badge.glitch.me/badge?page_id=sirpdboy-visitor-badge)] [![](https://img.shields.io/badge/TG群-点击加入-FFFFFF.svg)](https://t.me/joinchat/AAAAAEpRF88NfOK5vBXGBQ)
+### xaxys修改
+
+增加了一个option叫viewport，用于设置在luci界面中展示的端口（方便反代后ssl的端口和原http端口不同）
 
 ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/说明1.jpg)
 
